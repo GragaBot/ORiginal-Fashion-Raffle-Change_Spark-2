@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yeezy Boost 350-->
+        <scene sceneID="GIH-pN-hLS">
+            <objects>
+                <viewController storyboardIdentifier="YeezyView" title="Yeezy Boost 350" id="OG7-7h-At8" customClass="YeezyViewController" customModule="FashionRaffle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3e3-EY-RyR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ztR-xJ-UUr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YyA-q3-hPR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-6J-lUc">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yeezy_Boost_Nice" translatesAutoresizingMaskIntoConstraints="NO" id="kUQ-GR-H4R">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="222" id="K56-cU-crV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-3V-tYl">
+                                        <rect key="frame" x="8" y="248" width="367" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">        THE YEEZY BOOST 750 BROWN IS KANYE WEST’S PREMIER FOOTWEAR MODEL DEVELOPED WITH ADIDAS ORIGINALS. THE SNEAKER IS EXQUISITELY DESIGNED FEATURING BEAUTIFUL YET SIMPLE MATERIALS. PREMIUM SUEDE AND A FULL LENGTH BOOST™ MIDSOLE COMBINE TO CREATE THE YEEZY BOOST 750.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kUQ-GR-H4R" firstAttribute="leading" secondItem="Hcq-6J-lUc" secondAttribute="leading" id="Gaw-KK-4ab"/>
+                                    <constraint firstAttribute="width" constant="375" id="Pcl-aa-2tz"/>
+                                    <constraint firstAttribute="bottom" secondItem="kUQ-GR-H4R" secondAttribute="bottom" constant="380" id="W8J-Vt-86D"/>
+                                    <constraint firstItem="kUQ-GR-H4R" firstAttribute="top" secondItem="Hcq-6J-lUc" secondAttribute="top" id="cBa-Dx-4cx"/>
+                                    <constraint firstAttribute="height" constant="602" id="k2S-Zo-6K9"/>
+                                    <constraint firstAttribute="trailing" secondItem="kUQ-GR-H4R" secondAttribute="trailing" id="yMJ-vw-Naz"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjy-8b-HWI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="h6x-7r-TAp"/>
+                                </constraints>
+                                <state key="normal" title="Learn More"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6o-CB-AZE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="cJY-W9-ZMi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Notification"/>
+                                <connections>
+                                    <action selector="notificationAction:" destination="OG7-7h-At8" eventType="touchUpInside" id="EmD-U3-UAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rjy-8b-HWI" firstAttribute="trailing" secondItem="YyA-q3-hPR" secondAttribute="trailingMargin" id="P2q-by-Fmk"/>
+                            <constraint firstItem="Hcq-6J-lUc" firstAttribute="top" secondItem="3e3-EY-RyR" secondAttribute="bottom" id="Qnv-zP-tJu"/>
+                            <constraint firstItem="ztR-xJ-UUr" firstAttribute="top" secondItem="rjy-8b-HWI" secondAttribute="bottom" constant="7" id="Tc4-Re-x1w"/>
+                            <constraint firstItem="ztR-xJ-UUr" firstAttribute="top" secondItem="Hcq-6J-lUc" secondAttribute="bottom" constant="45" id="WdC-OA-ZBF"/>
+                            <constraint firstItem="y6o-CB-AZE" firstAttribute="leading" secondItem="YyA-q3-hPR" secondAttribute="leadingMargin" id="aCo-cx-S7h"/>
+                            <constraint firstItem="y6o-CB-AZE" firstAttribute="top" secondItem="Hcq-6J-lUc" secondAttribute="bottom" constant="8" id="b8W-WM-ZZs"/>
+                            <constraint firstItem="rjy-8b-HWI" firstAttribute="centerY" secondItem="y6o-CB-AZE" secondAttribute="centerY" id="dcf-GY-0rH"/>
+                            <constraint firstItem="rjy-8b-HWI" firstAttribute="top" secondItem="Hcq-6J-lUc" secondAttribute="bottom" constant="8" id="kYF-Lk-te2"/>
+                            <constraint firstItem="Hcq-6J-lUc" firstAttribute="leading" secondItem="YyA-q3-hPR" secondAttribute="leading" id="thD-cD-ABe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6S-od-v03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346.39999999999998" y="-38.23088455772114"/>
+        </scene>
+        <!--Anti Social Social Club-->
+        <scene sceneID="XSZ-MY-4yu">
+            <objects>
+                <viewController storyboardIdentifier="AntiSocialView" title="Anti Social Social Club" id="EQb-YC-vAX" customClass="AntiSocialViewController" customModule="FashionRaffle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FV7-JE-iIW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ApG-Nh-k5D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m14-p3-3Gi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Up-zQ-G5e">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Anti_Social" translatesAutoresizingMaskIntoConstraints="NO" id="gAd-2E-2PH">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="346" id="UcN-Wk-8vi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-uQ-OH9">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pCv-uQ-OH9" firstAttribute="leading" secondItem="6Up-zQ-G5e" secondAttribute="leadingMargin" id="3CS-zI-hN1"/>
+                                    <constraint firstAttribute="bottom" secondItem="pCv-uQ-OH9" secondAttribute="bottom" constant="57" id="8r0-u7-tr1"/>
+                                    <constraint firstItem="gAd-2E-2PH" firstAttribute="top" secondItem="6Up-zQ-G5e" secondAttribute="top" id="KyF-T0-NbG"/>
+                                    <constraint firstItem="pCv-uQ-OH9" firstAttribute="top" secondItem="gAd-2E-2PH" secondAttribute="bottom" constant="8" symbolic="YES" id="Lz9-zw-A4O"/>
+                                    <constraint firstItem="pCv-uQ-OH9" firstAttribute="centerX" secondItem="gAd-2E-2PH" secondAttribute="centerX" id="Zj7-Ix-NzQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="gAd-2E-2PH" secondAttribute="trailing" id="gPu-ll-pCC"/>
+                                    <constraint firstItem="gAd-2E-2PH" firstAttribute="leading" secondItem="6Up-zQ-G5e" secondAttribute="leading" id="goK-33-umm"/>
+                                    <constraint firstAttribute="bottom" secondItem="gAd-2E-2PH" secondAttribute="bottom" constant="255" id="h2q-Re-Ih8"/>
+                                    <constraint firstItem="gAd-2E-2PH" firstAttribute="centerX" secondItem="6Up-zQ-G5e" secondAttribute="centerX" id="sjb-d2-2SO"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-7K-16J">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ReU-pD-5YX"/>
+                                    <constraint firstAttribute="width" constant="31" id="iMk-8V-7Mi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Notification"/>
+                                <connections>
+                                    <action selector="notificate:" destination="EQb-YC-vAX" eventType="touchUpInside" id="JZE-Wk-xRZ"/>
+                                    <action selector="notificationAction:" destination="OG7-7h-At8" eventType="touchUpInside" id="Chm-KQ-Maa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXh-kX-1uW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="o49-9k-umT"/>
+                                </constraints>
+                                <state key="normal" title="Learn More"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Up-zQ-G5e" secondAttribute="trailing" id="3zQ-um-TAq"/>
+                            <constraint firstItem="SXh-kX-1uW" firstAttribute="top" secondItem="6Up-zQ-G5e" secondAttribute="bottom" constant="8" symbolic="YES" id="83p-bm-WX5"/>
+                            <constraint firstItem="6Up-zQ-G5e" firstAttribute="leading" secondItem="m14-p3-3Gi" secondAttribute="leading" id="9W5-RP-WKT"/>
+                            <constraint firstItem="ApG-Nh-k5D" firstAttribute="top" secondItem="SXh-kX-1uW" secondAttribute="bottom" constant="8" symbolic="YES" id="KQc-bQ-nGJ"/>
+                            <constraint firstItem="Mgd-7K-16J" firstAttribute="leading" secondItem="m14-p3-3Gi" secondAttribute="leadingMargin" id="M9J-gI-3FK"/>
+                            <constraint firstItem="SXh-kX-1uW" firstAttribute="trailing" secondItem="m14-p3-3Gi" secondAttribute="trailingMargin" id="qno-2t-gZn"/>
+                            <constraint firstItem="ApG-Nh-k5D" firstAttribute="top" secondItem="Mgd-7K-16J" secondAttribute="bottom" constant="8" symbolic="YES" id="t2a-Ng-0vB"/>
+                            <constraint firstItem="6Up-zQ-G5e" firstAttribute="top" secondItem="FV7-JE-iIW" secondAttribute="bottom" id="zlI-Re-iMy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OS-uh-UCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="-38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Anti_Social" width="512" height="512"/>
+        <image name="Notification" width="200" height="200"/>
+        <image name="Yeezy_Boost_Nice" width="375" height="250"/>
+    </resources>
+</document>
